@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    private void chooser(View view){
+    public void chooser(View view){
         Intent choose = new Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME).setClassName("android","com.android.internal.app.ResolverActivity");
         startActivity(choose);
     }
